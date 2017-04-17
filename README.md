@@ -2,7 +2,7 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
-# ***OUTPUT ACCURACY***:
+# ***OUTPUT***:
 
 ![Output](ScreenShot.png)
 
