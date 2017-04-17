@@ -118,7 +118,7 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
                 double vx = meas_package.raw_measurements_(2) * cos(meas_package.raw_measurements_(1));
                 double vy = meas_package.raw_measurements_(2) * sin(meas_package.raw_measurements_(1));
 
-                if(fabs(vx) < 0.0001) x_(3) = vy/vx;
+                if(fabs(vx) < 0.0001) x_(3) = atan2(vx, vy);
                 else x_(3) = 0.1;
 
                 x_(0) = x;  x_(1) = y;
